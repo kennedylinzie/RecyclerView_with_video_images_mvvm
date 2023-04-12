@@ -24,12 +24,9 @@ class ViewTrailer : AppCompatActivity() {
         binding = ActivityViewTrailerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val bundle = intent.extras // get the bundle from the intent
         val title = bundle?.getString("title")
         val trailerVideo = bundle?.getString("video")
-
-
 
         if (trailerVideo != null) {
             viewModel.setVideo(trailerVideo)

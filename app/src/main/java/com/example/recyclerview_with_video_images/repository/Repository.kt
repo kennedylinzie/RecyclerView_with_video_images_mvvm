@@ -9,6 +9,4 @@ class Repository {
     suspend fun getTrailers(): Response<List<MovieTrailerItem>> {
         return  RetrofitInstance.api.getTrailers()
     }
-
-
 }
