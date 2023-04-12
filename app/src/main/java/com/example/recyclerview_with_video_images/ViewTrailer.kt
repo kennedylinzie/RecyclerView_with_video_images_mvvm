@@ -18,7 +18,6 @@ import com.example.recyclerview_with_video_images.viewModels.viewTrailerViewMode
 class ViewTrailer : AppCompatActivity() {
     private lateinit var binding: ActivityViewTrailerBinding
     private val viewModel by viewModels<viewTrailerViewModel>()
-    private var currentPosition = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityViewTrailerBinding.inflate(layoutInflater)

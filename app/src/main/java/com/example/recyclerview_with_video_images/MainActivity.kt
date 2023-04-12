@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.recyclerview_with_video_images.adapter.myAdapter
+import com.example.recyclerview_with_video_images.adapter.MyAdapter
 import com.example.recyclerview_with_video_images.databinding.ActivityMainBinding
 import com.example.recyclerview_with_video_images.factories.MainTrailerFactory
 import com.example.recyclerview_with_video_images.repository.Repository
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bind = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bind.root)
-        val mainAdapter = myAdapter()
+        val mainAdapter = MyAdapter()
 
         val repository = Repository()
         val viewModelFactory = MainTrailerFactory(repository)

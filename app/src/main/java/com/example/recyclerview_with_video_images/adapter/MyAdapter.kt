@@ -3,7 +3,6 @@ package com.example.recyclerview_with_video_images.adapter
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -16,7 +15,7 @@ import com.example.recyclerview_with_video_images.databinding.RowItemBinding
 import com.example.recyclerview_with_video_images.models.MovieTrailerItem
 import com.squareup.picasso.Picasso
 
-class myAdapter: ListAdapter<MovieTrailerItem, myAdapter.ViewHolder>(differ) {
+class MyAdapter: ListAdapter<MovieTrailerItem, MyAdapter.ViewHolder>(differ) {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
