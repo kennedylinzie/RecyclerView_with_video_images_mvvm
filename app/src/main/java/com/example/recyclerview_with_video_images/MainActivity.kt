@@ -38,8 +38,6 @@ class MainActivity : AppCompatActivity() {
                 }
             })
 
-
-
         viewModel.getTrailers()
         viewModel.myResponse.observe(this, Observer {
             if (it.isSuccessful){
@@ -49,8 +47,5 @@ class MainActivity : AppCompatActivity() {
 
             }
         })
-
-
-
     }
 }

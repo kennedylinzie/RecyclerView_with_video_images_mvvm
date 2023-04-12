@@ -3,10 +3,8 @@ package com.example.recyclerview_with_video_images.api
 import com.example.recyclerview_with_video_images.models.MovieTrailerItem
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.Query
 
 interface SimpleAPI {
-
     @GET("Api.php?apicall=pulls")
     suspend fun getTrailers(
 //        @Query("albumId") albumId: Int,

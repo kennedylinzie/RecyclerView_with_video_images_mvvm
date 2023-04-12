@@ -17,7 +17,6 @@ import com.squareup.picasso.Picasso
 
 class MyAdapter: ListAdapter<MovieTrailerItem, MyAdapter.ViewHolder>(differ) {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             RowItemBinding.inflate(
@@ -29,7 +28,6 @@ class MyAdapter: ListAdapter<MovieTrailerItem, MyAdapter.ViewHolder>(differ) {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.onBind(getItem(position))
     }
-
 
     inner class ViewHolder(private val binding: RowItemBinding) :
         RecyclerView.ViewHolder(binding.root) {

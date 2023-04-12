@@ -1,18 +1,12 @@
 package com.example.recyclerview_with_video_images
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.example.recyclerview_with_video_images.databinding.ActivityViewTrailerBinding
-import com.google.android.exoplayer2.MediaItem
-import com.google.android.exoplayer2.SimpleExoPlayer
-import android.media.MediaPlayer
 
-import android.view.animation.AlphaAnimation
+import android.media.MediaPlayer
+import android.net.Uri
+import android.os.Bundle
 import android.widget.MediaController
 import androidx.activity.viewModels
-import com.daimajia.androidanimations.library.Techniques
-import com.daimajia.androidanimations.library.YoYo
-
+import androidx.appcompat.app.AppCompatActivity
+import com.example.recyclerview_with_video_images.databinding.ActivityViewTrailerBinding
 import com.example.recyclerview_with_video_images.viewModels.viewTrailerViewModel
 
 class ViewTrailer : AppCompatActivity() {

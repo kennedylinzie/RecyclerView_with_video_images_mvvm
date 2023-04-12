@@ -8,7 +8,6 @@ class viewTrailerViewModel : ViewModel() {
 
     private val _video = MutableLiveData<String>()
     val video: LiveData<String> = _video
-
     fun setVideo(video: String) {
         _video.value = video
     }
